@@ -9,11 +9,11 @@
 #define div /
 
 int main() {
-  printf("%d\n", NUM);
-  printf("%s\n", STR);
-  printf("%c\n", CHR);
-  printf("%d\n", f(NUM));
-  printf("%f\n", (float)22 div (float)7);
+	printf("%d\n", NUM);
+	printf("%s\n", STR);
+	printf("%c\n", CHR);
+	printf("%d\n", f(NUM));
+	printf("%f\n", (float)22 div (float)7);
 
-  return 0;
+	return 0;
 }

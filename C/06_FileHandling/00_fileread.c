@@ -5,24 +5,24 @@
 #define MAXSIZE 100
 
 int main() {
-  FILE * fp;  //-- Create a FILE pointer
-  char c;
+	FILE * fp;  //-- Create a FILE pointer
+	char c;
 
-  /* Open desired file in read mode */
-  fp = fopen("sample.txt", "r");
+	/* Open desired file in read mode */
+	fp = fopen("sample.txt", "r");
 
-  /* Read every character untill EOF */ 
-  while(1) {
-    c = fgetc(fp);
+	/* Read every character untill EOF */ 
+	while(1) {
+		c = fgetc(fp);
 
-    if(c == EOF)
-      break;
+		if(c == EOF)
+			break;
 
-    printf("%c", c);
-  }
+		printf("%c", c);
+	}
 
-  /* Finally close the file */
-  fclose(fp);
+	/* Finally close the file */
+	fclose(fp);
 
-  return 0;
+	return 0;
 }

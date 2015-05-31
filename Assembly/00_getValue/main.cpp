@@ -5,8 +5,7 @@ using namespace std;
 extern "C" int getValue();
 
 int main() {
-  cout << getValue() << endl;
+	cout << getValue() << endl;
 
-  return 0;
+	return 0;
 }
-

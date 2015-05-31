@@ -9,4 +9,3 @@ clean:
 
 cleanall:
 	rm -v *.o *.out
-

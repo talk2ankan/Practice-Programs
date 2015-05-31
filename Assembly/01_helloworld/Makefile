@@ -6,4 +6,3 @@ hello.o: hello.asm
 
 cleanall:
 	rm -v hello *.o
-

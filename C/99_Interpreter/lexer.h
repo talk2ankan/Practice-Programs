@@ -5,4 +5,3 @@ void splitWords(char* input, struct word_t* Word[], int* nWords);
 long generateToken(struct word_t* Word);
 
 #endif
-
