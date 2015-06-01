@@ -6,27 +6,27 @@
 #include <stdlib.h>
 
 int main() {
-	int ch;
+    int ch;
 
-	initscr();
-	raw();
-	noecho();
-	keypad(stdscr, TRUE);
+    initscr();
+    raw();
+    noecho();
+    keypad(stdscr, TRUE);
 
-	printw("Type something. Press F1 to exit.\n");
+    printw("Type something. Press F1 to exit.\n");
 
-	while((ch = getch()) != KEY_F(1)) {
-		attron(A_BOLD);
-		printw("%c", ch);
-		attroff(A_BOLD);
+    while((ch = getch()) != KEY_F(1)) {
+        attron(A_BOLD);
+        printw("%c", ch);
+        attroff(A_BOLD);
 
-		refresh();
-	}
+        refresh();
+    }
 
-	printw("Press any key to exit..");
-	refresh();
-	getch();
+    printw("Press any key to exit..");
+    refresh();
+    getch();
 
-	endwin();
-	return 0;
+    endwin();
+    return 0;
 }

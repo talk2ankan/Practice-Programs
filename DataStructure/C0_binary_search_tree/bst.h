@@ -4,10 +4,10 @@
 #include <stdio.h>
 
 typedef struct tree_node {
-	int data;
+    int data;
 
-	struct tree_node* left;
-	struct tree_node* right;
+    struct tree_node* left;
+    struct tree_node* right;
 } tree_node_t;
 
 void insert(tree_node_t** root, tree_node_t* node);

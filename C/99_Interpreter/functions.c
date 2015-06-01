@@ -2,95 +2,95 @@
 #include "functions.h"
 
 void pop(int* stack, int* top) {
-	int t = *top;
+    int t = *top;
 
-	printf("%d", stack[t]);
-	t--;
-	*top = t;
+    printf("%d", stack[t]);
+    t--;
+    *top = t;
 
-	return;
+    return;
 }
 
 void popl(int* stack, int* top) {
-	int t = *top;
+    int t = *top;
 
-	printf("%d\n", stack[t]);
-	t--;
-	*top = t;
+    printf("%d\n", stack[t]);
+    t--;
+    *top = t;
 
-	return;
+    return;
 }
 
 void endline() {
-	printf("\n");
+    printf("\n");
 
-	return;
+    return;
 }
 
 void addition(int* stack, int* top) {
-	int t = *top;
-	int num1;
-	int num2;
-	int sum;
+    int t = *top;
+    int num1;
+    int num2;
+    int sum;
 
-	num1 = stack[t];
-	t--;
-	num2 = stack[t];
-	sum = num2+num1;
-	stack[t] = sum;
+    num1 = stack[t];
+    t--;
+    num2 = stack[t];
+    sum = num2+num1;
+    stack[t] = sum;
 
-	*top = t;
+    *top = t;
 
-	return;
+    return;
 }
 
 void subtraction(int* stack, int* top) {
-	int t = *top;
-	int num1;
-	int num2;
-	int sub;
+    int t = *top;
+    int num1;
+    int num2;
+    int sub;
 
-	num1 = stack[t];
-	t--;
-	num2 = stack[t];
-	sub = num2-num1;
-	stack[t] = sub;
+    num1 = stack[t];
+    t--;
+    num2 = stack[t];
+    sub = num2-num1;
+    stack[t] = sub;
 
-	*top = t;
+    *top = t;
 
-	return;
+    return;
 }
 
 void multiplication(int* stack, int* top) {
-	int t = *top;
-	int num1;
-	int num2;
-	int mul;
+    int t = *top;
+    int num1;
+    int num2;
+    int mul;
 
-	num1 = stack[t];
-	t--;
-	num2 = stack[t];
-	mul = num2*num1;
-	stack[t] = mul;
+    num1 = stack[t];
+    t--;
+    num2 = stack[t];
+    mul = num2*num1;
+    stack[t] = mul;
 
-	*top = t;
+    *top = t;
 
-	return;
+    return;
 }
 
 void division(int* stack, int* top) {
-	int t = *top;
-	int num1;
-	int num2;
-	int div;
+    int t = *top;
+    int num1;
+    int num2;
+    int div;
 
-	num1 = stack[t];
-	t--;
-	num2 = stack[t];
-	div = num2/num1;
-	stack[t] = div;
+    num1 = stack[t];
+    t--;
+    num2 = stack[t];
+    div = num2/num1;
+    stack[t] = div;
 
-	*top = t;
+    *top = t;
 
-	return;
+    return;
 }

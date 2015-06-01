@@ -6,8 +6,8 @@
 #define MAXWORDLEN 30
 
 struct word_t {
-	char* word;
-	int length;
+    char* word;
+    int length;
 };
 
 #endif
